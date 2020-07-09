@@ -1,0 +1,16 @@
+package bank;
+
+public class MyException extends Exception{
+	private static int balance;
+	
+	MyException(String balanceinAccount) {
+		super(balanceinAccount);
+	}
+	
+	 public static void main(String[] args) { 
+		 try {
+			 Sy
+		 }
+	 }
+	
+}

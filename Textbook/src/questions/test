@@ -1,0 +1,13 @@
+package questions;
+
+public class test {
+
+    public static void main(String[] args) {
+        float[][] matrixKernal = {{-1, -1, -1}, {-1, 9, -1}, {-1, -1, -1}};
+
+        System.out.println(matrixKernal.length);
+
+    }
+
+
+}
