@@ -9,15 +9,25 @@ public class sortExperiment {
 
 	public static void main(String[] args) {
 		List <Integer> list;
-		long start, end;
+		long start, endI, endD, endR;
 
 		//You might need to change the 1M value to something smaller for other sorts
-		for (int i = 10; i <= 1_000_000; i *= 10){ 
+		for (int i = 10; i <= 10_000; i *= 10){ 
 			list = createRandomList(i); 
 			start = System.nanoTime();
+			
 			Lists.defaultSort(list);
-			end = System.nanoTime();
-			System.out.println("N=" + i + "\nTime spent: " + (end - start)/1e6 + " ms");
+			endD = System.nanoTime();
+			
+			Lists.selectionSortIterative(list);
+			endI = System.nanoTime();
+			
+			Lists.selectionSortRecursive(list);
+			endR = System.nanoTime();
+			
+			System.out.println("N=" + i + "\nDefault Sort, Time spent: " + (endD - start)/1e6 + " ms");
+			System.out.println("Selection-Iterative, Time spent: " + (endI - start)/1e6 + " ms");
+			System.out.println("Selection-Recursive, Time spent: " + (endR - start)/1e6 + " ms");
 		}
 	}
 

@@ -12,6 +12,7 @@
 			<item value=""/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="/home/gbemi/Documents/School/EECS/2030/2030 3rd try/Lab/Lab5.zip"/>
 			<item value="/home/gbemi/Documents/School/EECS/2030/2030 3rd try/Lab/Lab4.zip"/>
 			<item value="/home/gbemi/Documents/School/EECS/2030/2030 3rd try/Lab/LabTest1v277.zip"/>
 			<item value="/home/gbemi/Documents/School/EECS/2030/2030 3rd try/Lab/test1C.zip"/>
@@ -28,6 +29,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/home/gbemi/Documents/School/Co-op + Internship/Projects/Dodger_Game1"/>
+			<item value="/home/gbemi/Documents/School/Co-op + Internship/Projects"/>
 			<item value="/home/gbemi/Documents/School/EECS/2030/2030 3rd try/Lab/EECS2030_Lab3_sol"/>
 			<item value="/home/gbemi/Documents/School/EECS/2030/2030 1st try/Collections"/>
 		</list>

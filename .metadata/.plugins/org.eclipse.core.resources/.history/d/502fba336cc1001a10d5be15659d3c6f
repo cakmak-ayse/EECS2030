@@ -1,8 +1,0 @@
-package bank;
-
-public class MyException extends Exception{
-	private static int balance;
-	
-	MyException()
-	
-}
