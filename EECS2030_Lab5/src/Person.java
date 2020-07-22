@@ -1,20 +1,27 @@
 import java.util.Date;
 
-public class Person {
-	Date dateOfBirth;
-	String name;
+class Person {
+	 private Date dateOfBirth;
+	 private String name;
 	
-	
-	public Person(String name, Date dob) {
+	// use protected if there is a subclass that is in another package
+	 protected Person(String nameOfPerson, Date dob) {
 		dateOfBirth = dob;
-		this.name = name;
+		name = nameOfPerson;
 	}
 	
-	public final Date getDob() {
-		return this.dateOfBirth;
+	// use protected if there is a subclass that is in another package
+	protected final Date getDob() {
+		return dateOfBirth;
 	}
 	
-	public final String getName() {
-		return this.name;
+	// use protected if there is a subclass that is in another package
+	protected final String getName() {
+		return name;
+	}
+	
+	@Override
+	public String toString() {
+		return "Name: " + getName() + "\n" + "DOB: " + getDob() + "\n";
 	}
 }
