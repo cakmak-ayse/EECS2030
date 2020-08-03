@@ -22,7 +22,7 @@ public class PeopleClassesTester {
 		System.out.println (employeeS);
 
 		Employee employeeH = new HourlyEmployee("Employee Hourly", new Date(), "988"); 
-		//employeeH.setHourlyRate(65.0); //this should be impossible 
+//		employeeH.setHourlyRate(65.0); //this should be impossible 
 		System.out.println (employeeH);
 		
 		List <Person> list = new ArrayList<>();
