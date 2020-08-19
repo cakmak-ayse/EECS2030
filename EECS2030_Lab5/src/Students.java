@@ -1,12 +1,12 @@
 import java.util.Date;
 
-public class Student extends Person {
+public class Students extends Person {
 	private String studentId;
 	private String name;
 	private Date date;
 
 	
-	protected Student(String name, Date dob, String id) {
+	protected Students(String name, Date dob, String id) {
 		super(name, dob);
 		studentId = id;
 		this.name = name;

@@ -8,7 +8,7 @@ public class PeopleClassesTester {
 		System.out.println ("(Testing getDob()) " + person1.getDob()); // in order to remove the warning, remove static in Person.java
 		System.out.println (person1);
 		
-		Student student1 = new Student ("Student One", new Date(), "123456"); 
+		Students student1 = new Students ("Student One", new Date(), "123456"); 
 		System.out.println (student1);
 		
 		GraduateStudent grad1 = new GraduateStudent("Grad One", new Date(), "123457"); 

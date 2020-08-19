@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.cdt.ui.newCWizards"/>
+			<item value="org.eclipse.jdt.ui.java"/>
+		</list>
 	</section>
 	<section name="BasicNewProjectResourceWizard">
 	</section>
@@ -12,7 +18,9 @@
 			<item value=""/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="/home/gbemi/Documents/School/EECS/2030/2030 3rd try/Lab/LabTest2v458.zip"/>
 			<item value="/home/gbemi/Documents/School/EECS/2030/2030 3rd try/Lab/Lab6.zip"/>
+			<item value="/home/gbemi/Documents/School/EECS/2030/2030 3rd try/Lab/Lab5_Gain.zip"/>
 			<item value="/home/gbemi/Documents/School/EECS/2030/2030 3rd try/Lab/Lab5.zip"/>
 			<item value="/home/gbemi/Documents/School/EECS/2030/2030 3rd try/Lab/Lab4.zip"/>
 			<item value="/home/gbemi/Documents/School/EECS/2030/2030 3rd try/Lab/LabTest1v277.zip"/>
@@ -30,6 +38,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/home/gbemi/Documents/School/EECS/2030/2030 3rd try/Lab/eecs2030"/>
 			<item value="/home/gbemi/Documents/School/Co-op + Internship/Projects/Dodger_Game1"/>
 			<item value="/home/gbemi/Documents/School/Co-op + Internship/Projects"/>
 			<item value="/home/gbemi/Documents/School/EECS/2030/2030 3rd try/Lab/EECS2030_Lab3_sol"/>
@@ -39,5 +48,9 @@
 	<section name="ChooseWorkspaceDialogSettings">
 		<item key="DIALOG_X_ORIGIN" value="580"/>
 		<item key="DIALOG_Y_ORIGIN" value="274"/>
+	</section>
+	<section name="ResourceNavigator">
+		<item key="ResourceViewer.STORE_SORT_TYPE" value="1"/>
+		<item key="ResourceWorkingSetFilter.STORE_WORKING_SET" value="Aggregate for window 1589922945094"/>
 	</section>
 </section>

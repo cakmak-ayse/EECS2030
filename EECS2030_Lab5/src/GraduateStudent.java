@@ -1,6 +1,6 @@
 import java.util.Date;
 
-public class GraduateStudent extends Student{
+public class GraduateStudent extends Students{
 	private String supName;
 	private String name;
 	private Date date;
