@@ -4,38 +4,48 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Testrun {
+public abstract class Animal {
+    private static int numCreated;
 
-	public static <T extends Comparable <? super T>> void mysterySort1(List <T> list){
-		for (int i = 1; i < list.size(); i++){ //n 
-			int j = i; //1
-			
-			//list.get => O(1)
-			
-			while (j > 0 && list.get(j - 1).compareTo(list.get(j)) > 0){ //1
-				swap(list, j, j - 1); //O(1)
-				j --;
-			}
-		}
-	}
+    public Animal(){
+	Animal.numCreated++;
+    }
 	
-	public static <T extends Comparable <? super T>> void mysterySort2(List <T> list){
-		int h = 1;
-		while (h < list.size() / 3) {
-			h = 3 * h + 1; // 1, 4, 13, 40, 121, 364, 1093, ...
-		}
-		while (h >= 1) { // "h-sort" the list.
-			for (int i = h; i < list.size(); i++){ //n
-				int j = i;
-				while (j >= h && list.get(j - h).compareTo(list.get(j)) > 0){
-					swap(list, j, j - h);
-					j -= h;
-				}
-			}
-			
-			h = h / 3;
-		}
-	}
+    public abstract boolean canFly();    
+
+    public static int getNumCreated(){
+        return Animal.numCreated;
+    }
+}
+
+public class Fox extends Animal {
+    private static int numCreated;
+    
+    public Fox (){
+        Fox.numCreated++;
+    }
+    
+    public String whateverFoxSays(){
+        return "no one knows";
+    }
+    
+    public static int getNumCreated(){
+        return Fox.numCreated;
+    }
+
+    @Override
+    public boolean canFly() {
+        return false;
+    }
+}
+
+public class Owl extends Animal {
+
+    @Override
+    public boolean canFly() {
+        return true;
+    }
+}
 
 	//Mystery 3 Bubble Sort???
 		public static <T extends Comparable <? super T>> void mysterySort3(List <T> list){
